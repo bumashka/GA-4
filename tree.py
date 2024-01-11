@@ -139,13 +139,6 @@ class Tree:
         except FloatingPointError:
             return None
 
-    # # without true_divide(), pow() and exp() this is not needed:
-    # def is_good(self, points):
-    #     for point in points:
-    #         if self.compute(point) is None:
-    #             return False
-    #     return True
-
     def get_nodes(self):
         queue = [self.root]
         height = 1
